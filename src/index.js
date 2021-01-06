@@ -8,12 +8,21 @@ import Note from "./components/Note";
 //ReactDOM.render(<App />, document.getElementById("root"));
 //ReactDOM.render(<Header />, document.getElementById("root"));
 //ReactDOM.render(<Footer />, document.getElementById("root"));
+/*
+function Card(props) {
+    return (
+        <div>
+            <h1> {props.title} </h1>
+            <p> {props.content} </p>
+        </div>
+    );
+}
+*/
 ReactDOM.render(
     <div>
-        <App />
         <Header />
         <Footer />
-        <Note />
+        <App />
     </div>,
     document.getElementById("root")
 );

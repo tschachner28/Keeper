@@ -2,17 +2,18 @@ import React from "react";
 //import notes from "../notes";
 
 function Footer() {
-  var currentDate = displayDate();
+  var currentYear = displayYear();
   return (
     <div>
-    <footer> Copyright 2021
+    <footer> 
+      <p> Copyright {currentYear} </p>
       
     </footer>
     </div>
   );
 }
 
-function displayDate() {
+function displayYear() {
   var d = new Date();
   return d.getFullYear();
 }
